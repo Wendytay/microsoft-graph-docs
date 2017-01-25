@@ -1,4 +1,4 @@
-# Get a user
+# Get user
 
 Retrieve the properties and relationships of user object.
 
@@ -10,7 +10,7 @@ One of the following **scopes** is required to execute this API:
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id | userPrincipalName}
+GET /users/{id | userPrincipalName | me}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
@@ -44,22 +44,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 491
 
 {
+  "id": "id-value"
   "businessPhones": [
-       "businessPhones-value"
+       "+1 555 555 5555"
    ],
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Jenny Doe",
+   "givenName": "Jenny",
+   "jobTitle": "Product Manager",
+   "mail": "JD@abc.com",
+   "mobilePhone": "+1 4555444554",
+   "officeLocation": "2106",
+   "preferredLanguage": "en-US",
+   "surname": "Doe",
+   "userPrincipalName": "JD@abc.com",
 }
 ```
 
