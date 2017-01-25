@@ -11,10 +11,6 @@ One of the following **scopes** is required to execute this API:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
-```
-or
-<!-- { "blockType": "ignored" } -->
-```http
 GET /me
 ```
 ## Optional query parameters
